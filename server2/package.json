@@ -1,0 +1,17 @@
+{
+  "name": "server2",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "SJ",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.14.3"
+  },
+  "devDependencies": {}
+}
