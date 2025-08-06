@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "b9af8303-4379-477f-a046-47e035f36f97",
+		"name": "Express Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14138437",
+		"_collection_link": "https://crimson-station-111204.postman.co/workspace/Project~38b837e7-8290-4fac-81da-53473bf2e93d/collection/14138437-b9af8303-4379-477f-a046-47e035f36f97?action=share&source=collection_link&creator=14138437"
+	},
+	"item": [
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4444/demo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"demo"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "100",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4444/get-all-employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"get-all-employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get emp by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4444/get-employee/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"get-employee",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query parameter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4444/all-employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"all-employees"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add new employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameFromPostman\": \"emp6\",\r\n    \"emailFromPostman\": \"emp6@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update employee by Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameFromPostman\": \"emp6\",\r\n    \"emailFromPostman\": \"emp6@gmail.com\",\r\n    \"salary\": 10000 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/update/30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"update",
+						"30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete an employee by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4444/delete/24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"delete",
+						"24"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
